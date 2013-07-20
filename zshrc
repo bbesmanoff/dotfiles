@@ -1,6 +1,5 @@
 #RVM stuff
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
-source "$HOME/.rvm/scripts/rvm"
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh

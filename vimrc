@@ -57,8 +57,8 @@ autocmd BufNewFile,BufRead Gemfile,Gemfile.lock set ft=ruby
 "Vagrantfile is a ruby file
 autocmd BufNewFile,BufRead Vagrantfile,VagrantFile set ft=ruby
 
-" My alias file is a shell file
-autocmd BufNewFile,BufRead .aliases set ft=sh
+" My alias and funcion files are shell files
+autocmd BufNewFile,BufRead .aliases,.functions set ft=sh
 
 " Reload .vimrc if it is saved
 autocmd BufWritePost ~/.vimrc source ~/.vimrc

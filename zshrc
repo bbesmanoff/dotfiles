@@ -58,6 +58,9 @@ set -o vi
 # Run my aliases
 source ~/.aliases
 
+# Run my functions
+source ~/.functions
+
 # Ctrl-Z for vim hide/show
 foreground-vi() {
   fg %vi

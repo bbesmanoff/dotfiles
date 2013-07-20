@@ -9,6 +9,7 @@ dotfile_location=`pwd`
 
 # Symlink the files to the home directory
 ln -s $dotfile_location/aliases $HOME/.aliases 
+ln -s $dotfile_location/functions $HOME/.functions
 ln -s $dotfile_location/oh-my-zsh $HOME/.oh-my-zsh 
 ln -s $dotfile_location/screenrc $HOME/.screenrc 
 ln -s $dotfile_location/vim $HOME/.vim 

@@ -48,8 +48,8 @@ hi CursorLine ctermbg=darkgrey
 " G - grid
 map <silent> <Leader>g :set cursorcolumn! cursorline!<CR>
 
-" Map Leader C to count the number of occurrences of the current word
-map <Leader>c :%s/<C-r><C-w>//ng<CR>
+" Map Leader F to search for and count occurrences of the current word
+map <Leader>f :%s/<C-r><C-w>//ng<CR>
 
 "config.ru is a ruby file
 autocmd BufNewFile,BufRead config.ru set ft=ruby

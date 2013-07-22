@@ -63,8 +63,5 @@ autocmd BufNewFile,BufRead Vagrantfile,VagrantFile set ft=ruby
 " My alias and funcion files are shell files
 autocmd BufNewFile,BufRead .aliases,.functions set ft=sh
 
-" Reload .vimrc if it is saved
-autocmd BufWritePost ~/.vimrc source ~/.vimrc
-
 " Make sure that a visible color is used for search highlighting
 hi Search ctermbg=DarkYellow

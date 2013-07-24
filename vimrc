@@ -30,7 +30,7 @@ set relativenumber
 set hlsearch
 
 " Map <Tab> to highlight indentation
-map <Tab> /^ \+<CR>
+nnoremap <Tab> /^ \+<CR>
 
 " Code Folding
 set fdm=indent
@@ -38,7 +38,7 @@ set foldlevelstart=999
 set foldenable
 
 " Map space to help with code folding
-map <Space> za
+nnoremap <Space> za
 
 " Setup cursor and line highlight
 hi CursorColumn ctermbg=darkgrey
@@ -46,10 +46,10 @@ hi CursorLine ctermbg=darkgrey
 
 " Map Leader G to toggle cursor line and column
 " G - grid
-map <silent> <Leader>g :set cursorcolumn! cursorline!<CR>
+nnoremap <silent> <Leader>g :set cursorcolumn! cursorline!<CR>
 
 " Map Leader F to search for and count occurrences of the current word
-map <Leader>f :%s/<C-r><C-w>//ng<CR>
+nnoremap <Leader>f :%s/<C-r><C-w>//ng<CR>
 
 "config.ru is a ruby file
 autocmd BufNewFile,BufRead config.ru set ft=ruby

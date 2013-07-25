@@ -1,5 +1,6 @@
 "Run Pathogen
 execute pathogen#infect()
+execute pathogen#helptags()
 
 " Set coloring and formatting of source files
 syntax on

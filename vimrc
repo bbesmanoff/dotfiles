@@ -66,3 +66,24 @@ autocmd BufNewFile,BufRead .aliases,.functions set ft=sh
 
 " Make sure that a visible color is used for search highlighting
 hi Search ctermbg=DarkYellow
+
+" When entering and leaving windows, clear and restore cursorcolumn/line
+" Useful when multiple windows are open and you would like to see where you are
+
+autocmd WinEnter * call LoadCursorColumnLineState()
+autocmd WinLeave * call SaveCursorColumnLineState()
+
+function SaveCursorColumnLineState()
+  let w:columnstate = &cursorcolumn
+  let w:linestate = &cursorline
+
+  set nocursorcolumn
+  set nocursorline
+endfunction
+
+function LoadCursorColumnLineState()
+  if exists('w:columnstate') && exists('w:linestate')
+    let &cursorcolumn = w:columnstate
+    let &cursorline = w:linestate
+  endif
+endfunction

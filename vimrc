@@ -52,6 +52,13 @@ nnoremap <silent> <Leader>g :set cursorcolumn! cursorline!<CR>
 " Map Leader F to search for and count occurrences of the current word
 nnoremap <Leader>f :%s/<C-r><C-w>//ng<CR>
 
+" Map Leader TS to opening a tool-sharpening list in a split
+nnoremap <Leader>ts :split ~/tool-sharpening.txt<CR>
+
+" Map Leader VR to opening my vimrc in a vertical split
+nnoremap <Leader>vr :vsplit ~/.vimrc <CR>
+
+
 "config.ru is a ruby file
 autocmd BufNewFile,BufRead config.ru set ft=ruby
 

@@ -69,4 +69,4 @@ zle -N foreground-vi
 bindkey '^Z' foreground-vi
 
 # Start screen automatically
-[[ ! $TERM =~ "screen" ]] && screen
+[[ ! $TERM =~ "screen" ]] && screen -R

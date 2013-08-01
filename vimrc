@@ -50,7 +50,10 @@ hi CursorLine ctermbg=darkgrey
 nnoremap <silent> <Leader>g :set cursorcolumn! cursorline!<CR>
 
 " Map Leader F to search for and count occurrences of the current word
-nnoremap <Leader>f :%s/<C-r><C-w>//ng<CR>
+nnoremap <silent> <Leader>f :%s/<C-r><C-w>//ng<CR>
+
+" Map Leader X to clear the current search
+nnoremap <silent> <Leader>x :let @/ = ""<CR>
 
 " Map Leader TS to opening a tool-sharpening list in a split
 nnoremap <Leader>ts :split ~/tool-sharpening.txt<CR>

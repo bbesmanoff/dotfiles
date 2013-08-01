@@ -5,3 +5,20 @@ function current_branch() {
   ref=$(git rev-parse --short HEAD 2> /dev/null) || return
   echo ${ref#refs/heads/}
 }
+
+# Search up the directory structure for the git root of a project
+function git_root() {
+  current_directory=`pwd`
+
+  while [[ `pwd` != "/" ]] do
+    cd ..
+    if [[ -d ".git" ]] then
+      unset current_directory
+      return
+    fi
+  done
+
+  cd $current_directory
+  unset current_directory
+
+}

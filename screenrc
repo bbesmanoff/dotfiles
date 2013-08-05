@@ -7,6 +7,9 @@ shell /bin/zsh
 # Set the $TERM varaible
 term screen-256color
 
+# Ensure that things like vim clear screen when exiting
+altscreen on
+
 # Set hardstatus bar
 hardstatus alwayslastline
 hardstatus string "%{rd}[%c:%s %D %M %d]%{-} %-w%{wr}(%n %t)%{-}%+w"

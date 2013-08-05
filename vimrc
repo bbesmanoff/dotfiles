@@ -6,6 +6,9 @@ execute pathogen#helptags()
 syntax on
 filetype plugin indent on
 
+" Set 256 color
+set t_Co=256
+
 " Set vim mode
 set nocompatible
 

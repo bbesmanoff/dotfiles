@@ -67,6 +67,8 @@ nnoremap <Leader>ts :split ~/tool-sharpening.txt<CR>
 " Map Leader VR to opening my vimrc in a vertical split
 nnoremap <Leader>vr :vsplit ~/.vimrc <CR>
 
+" Map Leader L to toggling line numbers vs relative numbers
+nnoremap <silent> <Leader>l :call ToggleRelativeAbsLineNumbers()<CR>
 
 "config.ru is a ruby file
 autocmd BufNewFile,BufRead config.ru set ft=ruby
@@ -101,5 +103,15 @@ function LoadCursorColumnLineState()
   if exists('w:columnstate') && exists('w:linestate')
     let &cursorcolumn = w:columnstate
     let &cursorline = w:linestate
+  endif
+endfunction
+
+function ToggleRelativeAbsLineNumbers()
+  let l:relative = &relativenumber
+
+  if l:relative == 1
+    set norelativenumber number
+  else
+    set nonumber relativenumber
   endif
 endfunction

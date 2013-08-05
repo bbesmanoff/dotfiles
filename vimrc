@@ -15,6 +15,9 @@ set nocompatible
 " Set leader
 let mapleader=","
 
+" Set the timeout length
+set timeoutlen=250
+
 " General code style
 set tw=80
 set tabstop=2

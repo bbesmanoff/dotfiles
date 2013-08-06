@@ -26,6 +26,7 @@ alias grh='git reset --hard'
 alias gs='git status'
 alias gst='git stash'
 alias gstp='git stash pop'
+alias ivm='vim' # I've done this too many times recently
 alias l='ls -alh'
 alias markdown='Markdown.pl'
 alias topten='print -l -- ${(o)history%% *} | uniq -c | sort -nr | head -n 10'

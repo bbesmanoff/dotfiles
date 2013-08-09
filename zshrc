@@ -68,5 +68,9 @@ foreground-vi() {
 zle -N foreground-vi
 bindkey '^Z' foreground-vi
 
+# Check for computer specifc configuration (per computer - things that might be
+# needed for work but would break on a personal computer)
+[[ -f ~/.comp.conf ]] && source ~/.comp.conf
+
 # Start screen automatically
 [[ ! $TERM =~ "screen" ]] && screen -R

@@ -44,6 +44,9 @@ set fdm=indent
 set foldlevelstart=999
 set foldenable
 
+"Start in no-paste mode
+set nopaste
+
 " Map space to help with code folding
 nnoremap <Space> za
 
@@ -69,6 +72,9 @@ nnoremap <Leader>vr :vsplit ~/.vimrc <CR>
 
 " Map Leader L to toggling line numbers vs relative numbers
 nnoremap <silent> <Leader>l :call ToggleRelativeAbsLineNumbers()<CR>
+
+"Map Leader v to toggling between paste modes
+nnoremap <silent> <Leader>v :set paste!<CR>
 
 "config.ru is a ruby file
 autocmd BufNewFile,BufRead config.ru set ft=ruby

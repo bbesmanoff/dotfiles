@@ -86,7 +86,7 @@ autocmd BufNewFile,BufRead Gemfile,Gemfile.lock set ft=ruby
 autocmd BufNewFile,BufRead Vagrantfile,VagrantFile set ft=ruby
 
 " My alias and funcion files are shell files
-autocmd BufNewFile,BufRead .aliases,.functions set ft=sh
+autocmd BufNewFile,BufRead {,.}{aliases,functions} set ft=sh
 
 " Make sure that a visible color is used for search highlighting
 hi Search ctermbg=DarkYellow

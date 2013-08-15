@@ -76,6 +76,12 @@ nnoremap <silent> <Leader>l :call ToggleRelativeAbsLineNumbers()<CR>
 "Map Leader v to toggling between paste modes
 nnoremap <silent> <Leader>v :set paste!<CR>
 
+"Map Leader TT to run the current spec file
+nnoremap <silent> <Leader>tt :call RunCurrentSpecFile()<CR>
+
+"Map Leader NT to run the nearest spec
+nnoremap <silent> <Leader>nt :call RunNearestSpec()<CR>
+
 "config.ru is a ruby file
 autocmd BufNewFile,BufRead config.ru set ft=ruby
 

@@ -82,6 +82,9 @@ nnoremap <silent> <Leader>tt :call RunCurrentSpecFile()<CR>
 "Map Leader NT to run the nearest spec
 nnoremap <silent> <Leader>nt :call RunNearestSpec()<CR>
 
+"Map F7 to toggle spell checking
+nnoremap <F7> :set spell!<CR>
+
 "config.ru is a ruby file
 autocmd BufNewFile,BufRead config.ru set ft=ruby
 

@@ -8,5 +8,5 @@ function current_branch() {
 
 # Go to the top level of a git repository
 function git_root() {
-  git rev-parse --show-toplevel
+cd $(git rev-parse --show-toplevel)
 }

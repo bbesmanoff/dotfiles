@@ -6,19 +6,7 @@ function current_branch() {
   echo ${ref#refs/heads/}
 }
 
-# Search up the directory structure for the git root of a project
+# Go to the top level of a git repository
 function git_root() {
-  current_directory=`pwd`
-
-  while [[ `pwd` != "/" ]] do
-    cd ..
-    if [[ -d ".git" ]] then
-      unset current_directory
-      return
-    fi
-  done
-
-  cd $current_directory
-  unset current_directory
-
+  git rev-parse --show-toplevel
 }

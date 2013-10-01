@@ -85,6 +85,12 @@ nnoremap <silent> <Leader>nt :call RunNearestSpec()<CR>
 "Map F7 to toggle spell checking
 nnoremap <F7> :set spell!<CR>
 
+" Map C-n to opening a new tab
+nnoremap <silent> <C-n> :tabnew<CR>
+
+" Map C-x to closing a tab
+nnoremap <silent> <C-x> :tabclose<CR>
+
 "config.ru is a ruby file
 autocmd BufNewFile,BufRead config.ru set ft=ruby
 

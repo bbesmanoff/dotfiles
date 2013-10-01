@@ -113,6 +113,9 @@ hi Search ctermbg=DarkYellow
 autocmd WinEnter * call LoadCursorColumnLineState()
 autocmd WinLeave * call SaveCursorColumnLineState()
 
+" Closing the command t window
+let g:CommandTCancelMap='<C-x>'
+
 function SaveCursorColumnLineState()
   let w:columnstate = &cursorcolumn
   let w:linestate = &cursorline

@@ -5,8 +5,3 @@ function current_branch() {
   ref=$(git rev-parse --short HEAD 2> /dev/null) || return
   echo ${ref#refs/heads/}
 }
-
-# Go to the top level of a git repository
-function git_root() {
-cd $(git rev-parse --show-toplevel)
-}

@@ -23,6 +23,7 @@ set tw=80
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set autoread
 
 " Backspace settings
 set backspace=indent,eol,start

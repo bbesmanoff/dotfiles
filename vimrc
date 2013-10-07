@@ -51,9 +51,9 @@ set nopaste
 " Map space to help with code folding
 nnoremap <Space> za
 
-" Setup cursor and line highlight
-hi CursorColumn ctermbg=darkgrey
-hi CursorLine ctermbg=darkgrey
+" Setup colors
+set background=dark
+colorscheme solarized
 
 " Map Leader G to toggle cursor line and column
 " G - grid
@@ -103,9 +103,6 @@ autocmd BufNewFile,BufRead Vagrantfile,VagrantFile set ft=ruby
 
 " My alias and funcion files are shell files
 autocmd BufNewFile,BufRead {,.}{aliases,functions} set ft=sh
-
-" Make sure that a visible color is used for search highlighting
-hi Search ctermbg=DarkYellow
 
 " When entering and leaving windows, clear and restore cursorcolumn/line
 " Useful when multiple windows are open and you would like to see where you are

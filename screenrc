@@ -12,7 +12,7 @@ altscreen on
 
 # Set hardstatus bar
 hardstatus alwayslastline
-hardstatus string "%{rd}[%c:%s %D %M %d]%{-} %-w%{wr}(%n %t)%{-}%+w"
+hardstatus string "%{wd}[%c:%s %D %M %d]%{-} %-w%{dw}(%n %t)%{-}%+w"
 
 # Only display messages for one second
 msgwait 1

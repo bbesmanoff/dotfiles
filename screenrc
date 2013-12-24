@@ -16,3 +16,7 @@ hardstatus string "%{wd}[%c:%s %D %M %d]%{-} %-w%{dw}(%n %t)%{-}%+w"
 
 # Only display messages for one second
 msgwait 1
+
+# Configure scrolling
+def scrollback 500
+termcapinfo screen*|xterm* ti@:te@

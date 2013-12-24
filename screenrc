@@ -18,5 +18,5 @@ hardstatus string "%{wd}[%c:%s %D %M %d]%{-} %-w%{dw}(%n %t)%{-}%+w"
 msgwait 1
 
 # Configure scrolling
-def scrollback 500
+defscrollback 500
 termcapinfo screen*|xterm* ti@:te@

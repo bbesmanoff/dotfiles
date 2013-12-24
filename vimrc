@@ -55,6 +55,10 @@ nnoremap <Space> za
 set background=dark
 colorscheme solarized
 
+" Configure :set spell highlighting
+hi clear SpellBad
+hi SpellBad ctermbg=red
+
 " Map Leader G to toggle cursor line and column
 " G - grid
 nnoremap <silent> <Leader>g :set cursorcolumn! cursorline!<CR>

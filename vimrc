@@ -31,6 +31,8 @@ set backspace=indent,eol,start
 " See where the cursor is in the file numerically
 set ruler
 
+" With 7.4, the current line number can be bumped out
+set number
 " Relative numbers for easy jumping
 set relativenumber
 
@@ -74,9 +76,6 @@ nnoremap <Leader>ts :split ~/tool-sharpening.txt<CR>
 
 " Map Leader VR to opening my vimrc in a vertical split
 nnoremap <Leader>vr :vsplit ~/.vimrc <CR>
-
-" Map Leader L to toggling line numbers vs relative numbers
-nnoremap <silent> <Leader>l :call ToggleRelativeAbsLineNumbers()<CR>
 
 "Map Leader v to toggling between paste modes
 nnoremap <silent> <Leader>v :set paste!<CR>
@@ -129,15 +128,5 @@ function LoadCursorColumnLineState()
   if exists('w:columnstate') && exists('w:linestate')
     let &cursorcolumn = w:columnstate
     let &cursorline = w:linestate
-  endif
-endfunction
-
-function ToggleRelativeAbsLineNumbers()
-  let l:relative = &relativenumber
-
-  if l:relative == 1
-    set norelativenumber number
-  else
-    set nonumber relativenumber
   endif
 endfunction

@@ -61,6 +61,9 @@ colorscheme solarized
 hi clear SpellBad
 hi SpellBad ctermbg=red
 
+" Configure RNU/NU coloring
+hi CursorLineNr cterm=bold ctermbg=0 ctermfg=15
+
 " Map Leader G to toggle cursor line and column
 " G - grid
 nnoremap <silent> <Leader>g :set cursorcolumn! cursorline!<CR>

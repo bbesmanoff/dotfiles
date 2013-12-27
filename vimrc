@@ -98,6 +98,14 @@ nnoremap <silent> <C-n> :tabnew<CR>
 " Map C-x to closing a tab
 nnoremap <silent> <C-x> :tabclose<CR>
 
+" Map clipboard copy on yank
+nnoremap <silent> <Leader>y "*y
+nnoremap <silent> <Leader>Y "*Y
+
+" Map clipboard paste on put
+nnoremap <silent> <Leader>p "*p
+nnoremap <silent> <Leader>P "*P
+
 "config.ru is a ruby file
 autocmd BufNewFile,BufRead config.ru set ft=ruby
 

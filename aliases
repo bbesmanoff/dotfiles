@@ -1,4 +1,5 @@
 alias ackp='ack --pager="less -R"'
+alias agp='ag --pager="less -R"'
 alias b='bundle'
 alias c='clear'
 alias g='git'

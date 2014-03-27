@@ -72,5 +72,9 @@ bindkey '^Z' foreground-vi
 # needed for work but would break on a personal computer)
 [[ -f ~/.comp.conf ]] && source ~/.comp.conf
 
+# Setup color scheme for `ls`
+LSCOLORS=exfxcxdxbxegedabagacad
+export LSCOLORS
+
 # Start screen automatically
 [[ ! $TERM =~ "screen" ]] && screen -R

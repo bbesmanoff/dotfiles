@@ -78,3 +78,5 @@ export LSCOLORS
 
 # Start screen automatically
 [[ ! $TERM =~ "screen" ]] && screen -R
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

@@ -77,6 +77,9 @@ LSCOLORS=exfxcxdxbxegedabagacad
 export LSCOLORS
 
 # Start screen automatically
-[[ ! $TERM =~ "screen" ]] && screen -R
+[[ ! $TERM =~ "screen" ]] && tmux
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.tmuxifier/bin:$home/.rvm/bin # add rvm to path for scripting
+export PATH
+
+eval "$(tmuxifier init -)"

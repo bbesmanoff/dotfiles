@@ -127,6 +127,11 @@ autocmd WinLeave * call SaveCursorColumnLineState()
 " Closing the command t window
 let g:CommandTCancelMap='<C-x>'
 
+" Configure vim-multiple-cursors
+let g:multi_cursor_next_key='<C-w>'
+let g:multi_cursor_prev_key='<C-e>'
+let g:multi_cursor_skip_key='<C-q>'
+
 function SaveCursorColumnLineState()
   let w:columnstate = &cursorcolumn
   let w:linestate = &cursorline

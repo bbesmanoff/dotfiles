@@ -55,7 +55,7 @@ nnoremap <Space> za
 
 " Setup colors
 set background=dark
-colorscheme solarized
+colorscheme base16-tomorrow
 
 " Configure :set spell highlighting
 hi clear SpellBad

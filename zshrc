@@ -1,6 +1,3 @@
-#RVM stuff
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
-
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -79,7 +76,7 @@ export LSCOLORS
 # Start screen automatically
 [[ ! $TERM =~ "screen" ]] && tmux
 
-PATH=$PATH:$HOME/.tmuxifier/bin:$home/.rvm/bin # add rvm to path for scripting
+PATH=$PATH:$HOME/.tmuxifier/bin
 export PATH
 
 eval "$(tmuxifier init -)"

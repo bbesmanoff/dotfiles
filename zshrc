@@ -74,9 +74,11 @@ LSCOLORS=exfxcxdxbxegedabagacad
 export LSCOLORS
 
 # Start screen automatically
-[[ ! $TERM =~ "screen" ]] && tmux
+[[ ! $TERM =~ "screen" ]] && reattach-to-user-namespace -l tmux
 
 PATH=$PATH:$HOME/.tmuxifier/bin
 export PATH
 
 eval "$(tmuxifier init -)"
+
+eval "$(rbenv init -)"

@@ -80,5 +80,4 @@ PATH=$PATH:$HOME/.tmuxifier/bin
 export PATH
 
 eval "$(tmuxifier init -)"
-
 eval "$(rbenv init -)"

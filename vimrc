@@ -158,3 +158,5 @@ function LoadCursorColumnLineState()
     let &cursorline = w:linestate
   endif
 endfunction
+
+let g:jsx_ext_required = 0

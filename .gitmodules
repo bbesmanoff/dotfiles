@@ -34,3 +34,6 @@
 [submodule "vim/bundle/typescript-vim.git"]
 	path = vim/bundle/typescript-vim.git
 	url = git@github.com:leafgarland/typescript-vim.git
+[submodule "vim/bundle/vim-jsx"]
+	path = vim/bundle/vim-jsx
+	url = https://github.com/mxw/vim-jsx.git
